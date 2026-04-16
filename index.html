@@ -40,10 +40,10 @@
                   <a href="#about" class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white">Tentang Saya</a>
                 </li>
                 <li class="group">
-                  <a href="#portfolio" class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white">Portfolio</a>
+                  <a href="#portfolio" class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white">Portofolio</a>
                 </li>
                 <li class="group">
-                  <a href="#clients" class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white">Clients</a>
+                  <a href="#clients" class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white">Dosen Pengampu</a>
                 </li>
                 <li class="group">
                   <a href="#blog" class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white">Blog</a>
@@ -83,17 +83,26 @@
             <a href="#" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Hubungi Saya</a>
           </div>
           <div class="w-full self-end px-4 lg:w-1/2">
-            <div class="relative mt-10 lg:mt-9 lg:right-0">
-              <img src="src/img/foto2.png" alt="Potter" class="relative z-10 max-w-full mx-auto" />
-              <span class="absolute bottom-1 left-1/2 -translate-x-1/2 md:scale-125">
-                <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <div class="relative mt-10 lg:mt-9 h-[400px] flex items-center justify-center">
+
+              <!-- SVG background -->
+              <span class="absolute inset-0 flex items-center justify-center">
+                <svg width="400" height="400" viewBox="0 0 200 200">
                   <path
                     fill="#14b8a6"
-                    d="M47.6,-68.7C57.4,-58.5,58,-38.7,62.2,-21.3C66.4,-3.8,74.4,11.5,74.2,27.8C74,44.2,65.7,61.6,52,67.2C38.3,72.8,19.2,66.5,3.6,61.5C-11.9,56.6,-23.9,52.9,-36.3,46.9C-48.6,40.9,-61.5,32.5,-68.3,20.2C-75.1,7.8,-75.9,-8.6,-72.1,-24.5C-68.4,-40.4,-60.1,-55.8,-47.3,-65.1C-34.5,-74.3,-17.3,-77.4,0.8,-78.5C18.9,-79.7,37.9,-79,47.6,-68.7Z"
+                    d="M47.6,-68.7C57.4,-58.5,58,-38.7,62.2,-21.3C66.4,-3.8,74.4,11.5,74.2,27.8C74,44.2,65.7,61.6,52,67.2C38.3,72.8,19.2,66.5,3.6,61.5C-11.9,56.6,-23.9,52.9,-36.3,46.9C-48.6,40.9,-61.5,32.5,-68.3,20.2C-75.1,7.8,-75.9,-8.6,-72.1,-24.5C-68.4,-40.4,-60.1,-55.8,-47.3,-65.1C-34.5,-74.3,-17.3,-77.4,0.8,-78.5C18.9,-79.7,37.9,-79,47.6,-68。7Z"
                     transform="translate(100 100) scale(1.1)"
                   />
                 </svg>
               </span>
+
+              <!-- Image -->
+              <img 
+                src="src/img/foto_jilbab1.png" 
+                alt="Potter"
+                class="relative z-10 w-[440px] h-[381px] object-contain"
+              />
+
             </div>
           </div>
         </div>
@@ -104,15 +113,99 @@
     <!-- About section Start -->
     <section id="about" class="pt-36 pb-32 dark:bg-dark">
       <div class="container">
-        <div class="flex flex-wrap">
+        <div class="flex flex-wrap items-center">
+
+          <!-- KIRI (FOTO + IDENTITAS) -->
           <div class="w-full px-4 mb-10 lg:w-1/2">
-            <h4 class="font-bold uppercase text-primary text-lg mb-3">Tentang saya</h4>
-            <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl dark:text-white">Yuk, Belajar web programming di WPU!</h2>
-            <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit expedita autem facilis maxime, earum eius totam!</p>
+            <div class="flex flex-col items-center text-center lg:text-left lg:items-start">
+
+              <div class="w-52 h-52 flex items-center justify-center bg-white rounded-2xl shadow-lg border border-slate-200 mb-6">
+                <a 
+                  href="https://www.usti.ac.id/" 
+                  target="_blank">
+                  <img 
+                    src="src/img/logo_usti.png" 
+                    alt="Foto Kampus USTI"
+                    class="w-32 object-contain"
+                  />
+                </a>
+              </div>
+
+              <h3 class="text-2xl font-bold text-dark dark:text-white">
+                Universitas Sains dan Teknologi Indonesia
+              </h3>
+            </div>
           </div>
+
+
+          <!-- KANAN (DESKRIPSI) -->
+        <div class="w-full px-4 lg:w-1/2">
+
+          <h4 class="font-bold uppercase text-primary text-lg mb-3">
+            Tentang Saya
+          </h4>
+
+          <h2 class="font-bold text-dark text-3xl mb-5 lg:text-4xl dark:text-white">
+            Mahasiswa Universitas Sains dan Teknologi Indonesia
+          </h2>
+
+          <p class="text-base text-secondary mb-6 leading-relaxed">
+            Tanggal Lahir : 26 Juni 2006 <br>
+            Alamat : Jl. Perumahan Wadyagraha 1, Blok GG 2, Pekanbaru, Riau <br>
+            Hobi : Membaca Buku bergenre Misterius, Teka-teki, dan Fiksi Ilmiah
+          </p>
+
+          <p class="text-base text-secondary mb-6 leading-relaxed">
+            Saya adalah mahasiswa Teknik Informatika yang memiliki minat pada pengembangan web. 
+            Fokus saya adalah membangun website yang responsif, modern, dan mudah digunakan.
+          </p>
+          <!-- SKILLS -->
+        <div class="mb-6">
+          <h3 class="font-semibold text-dark mb-3 dark:text-white">
+            Skills
+          </h3>
+
+          <div class="flex flex-wrap gap-3">
+            <span class="px-4 py-1 rounded-full text-sm font-medium 
+              bg-primary text-white 
+              hover:opacity-80 hover:scale-105 
+              transition duration-300 mr-2">
+              HTML
+            </span>
+
+            <span class="px-4 py-1 rounded-full text-sm font-medium 
+              bg-primary text-white 
+              hover:opacity-80 hover:scale-105 
+              transition duration-300 mr-2">
+              CSS
+            </span>
+
+            <span class="px-4 py-1 rounded-full text-sm font-medium 
+              bg-primary text-white 
+              hover:opacity-80 hover:scale-105 
+              transition duration-300 mr-2">
+              Tailwind
+            </span>
+
+            <span class="px-4 py-1 rounded-full text-sm font-medium 
+              bg-primary text-white 
+              hover:opacity-80 hover:scale-105 
+              transition duration-300 mr-2">
+              JavaScript
+            </span>
+
+            <span class="px-4 py-1 rounded-full text-sm font-medium 
+              bg-primary text-white 
+              hover:opacity-80 hover:scale-105 
+              transition duration-300">
+              Python
+            </span>
+          </div>
+        </div>
+
           <div class="w-full px-4 lg:w-1/2">
             <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10 dark:text-white">Mari Berteman</h3>
-            <p class="font-medium text-base text-secondary mb-6 lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque expedita voluptatum quod dignissimos eos quam, quia recusandae quaerat.</p>
+            <p class="font-medium text-base text-secondary mb-6 lg:text-lg">Jelajahi Sosial Media saya!</p>
 
             <div class="flex items-center">
               <!-- Instagram -->
@@ -142,6 +235,24 @@
                   />
                 </svg>
               </a>
+              
+              <!-- YouTube -->
+               <a href="https://www.youtube.com/@bungashakila1788" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-secondary hover:border-primary hover:bg-primary hover:text-white">
+                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <title>YouTube</title>
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  />
+                </svg>
+              </a>
+
+              <!-- Apple Music -->
+              <a href="https://music.apple.com/id/playlist/meee/pl.u-11zBJ7afNq2z9Mz?l=id" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-secondary hover:border-primary hover:bg-primary hover:text-white">
+                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <title>Apple Music</title>
+                  <path d="M23.994 6.124a9.23 9.23 0 00-.24-2.19c-.317-1.31-1.062-2.31-2.18-3.043a5.022 5.022 0 00-1.877-.726 10.496 10.496 0 00-1.564-.15c-.04-.003-.083-.01-.124-.013H5.986c-.152.01-.303.017-.455.026-.747.043-1.49.123-2.193.4-1.336.53-2.3 1.452-2.865 2.78-.192.448-.292.925-.363 1.408-.056.392-.088.785-.1 1.18 0 .032-.007.062-.01.093v12.223c.01.14.017.283.027.424.05.815.154 1.624.497 2.373.65 1.42 1.738 2.353 3.234 2.801.42.127.856.187 1.293.228.555.053 1.11.06 1.667.06h11.03a12.5 12.5 0 001.57-.1c.822-.106 1.596-.35 2.295-.81a5.046 5.046 0 001.88-2.207c.186-.42.293-.87.37-1.324.113-.675.138-1.358.137-2.04-.002-3.8 0-7.595-.003-11.393zm-6.423 3.99v5.712c0 .417-.058.827-.244 1.206-.29.59-.76.962-1.388 1.14-.35.1-.706.157-1.07.173-.95.045-1.773-.6-1.943-1.536a1.88 1.88 0 011.038-2.022c.323-.16.67-.25 1.018-.324.378-.082.758-.153 1.134-.24.274-.063.457-.23.51-.516a.904.904 0 00.02-.193c0-1.815 0-3.63-.002-5.443a.725.725 0 00-.026-.185c-.04-.15-.15-.243-.304-.234-.16.01-.318.035-.475.066-.76.15-1.52.303-2.28.456l-2.325.47-1.374.278c-.016.003-.032.01-.048.013-.277.077-.377.203-.39.49-.002.042 0 .086 0 .13-.002 2.602 0 5.204-.003 7.805 0 .42-.047.836-.215 1.227-.278.64-.77 1.04-1.434 1.233-.35.1-.71.16-1.075.172-.96.036-1.755-.6-1.92-1.544-.14-.812.23-1.685 1.154-2.075.357-.15.73-.232 1.108-.31.287-.06.575-.116.86-.177.383-.083.583-.323.6-.714v-.15c0-2.96 0-5.922.002-8.882 0-.123.013-.25.042-.37.07-.285.273-.448.546-.518.255-.066.515-.112.774-.165.733-.15 1.466-.296 2.2-.444l2.27-.46c.67-.134 1.34-.27 2.01-.403.22-.043.442-.088.663-.106.31-.025.523.17.554.482.008.073.012.148.012.223.002 1.91.002 3.822 0 5.732z"/>
+                </svg>
+              </a>
             </div>
           </div>
         </div>
@@ -154,29 +265,31 @@
       <div class="container">
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto text-center mb-16">
-            <h4 class="font-semibold text-lg text-primary mb-2">Portfolio</h4>
+            <h4 class="font-semibold text-lg text-primary mb-2">Portofolio</h4>
             <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white">Project Terbaru</h2>
-            <p class="font-medium text-md text-secondary md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit delectus est porro modi harum architecto similique excepturi facere officiis. Asperiores!</p>
+            <!-- <p class="font-medium text-md text-secondary md:text-lg">Beberapa Project yang saya sendiri</p> -->
           </div>
         </div>
+        <!-- Card -->
         <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
           <div class="mb-12 p-4 md:w-1/2">
             <div class="rounded-md shadow-md overflow-hidden">
-              <img src="src/img/portfolio/1.jpg" alt="Lego" width="w-full" />
+              <a href="https://github.com/Bungaks26/portfolio-bappeda-tebing-tinggi" target="_blank">
+                <img src="src/img/portfolio/project1.png" alt="Project 1" />
+              </a>
             </div>
-            <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Landing Page Bunga</h3>
-            <p class="font-medium text-base text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores distinctio officia illo.</p>
+            <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Portofolio Bappeda Tebing Tinggi</h3>
+            <p class="font-medium text-base text-secondary">Project portofolio untuk Bappeda Tebing Tinggi yang di kembang mengggunakan HTML, Tailwind CSS, dan JavaScript</p>
           </div>
-
           <div class="mb-12 p-4 md:w-1/2">
             <div class="rounded-md shadow-md overflow-hidden">
-              <img src="src/img/portfolio/2.jpg" alt="E-Commerce" width="w-full" />
+              <img src="src/img/portfolio/project2.png" alt="Project Pembuatan kode penyelesaian Metode Numerik" width="w-full" />
             </div>
-            <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">E-Commerce Bunga</h3>
-            <p class="font-medium text-base text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores distinctio officia illo.</p>
+            <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Project Pembuatan kode penyelesaian Metode Numerik</h3>
+            <p class="font-medium text-base text-secondary">Project ini di buat agar mempermudah perhitungan dalam menyelesaikan masalah metode numerik, dikembangkan menggunakan Python</p>
           </div>
 
-          <div class="mb-12 p-4 md:w-1/2">
+          <!-- <div class="mb-12 p-4 md:w-1/2">
             <div class="rounded-md shadow-md overflow-hidden">
               <img src="src/img/portfolio/3.jpg" alt="Technical Documentation" width="w-full" />
             </div>
@@ -190,7 +303,7 @@
             </div>
             <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Tribute Page Bunga</h3>
             <p class="font-medium text-base text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores distinctio officia illo.</p>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -201,12 +314,22 @@
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto text-center mb-16">
-            <h4 class="font-semibold text-lg text-primary mb-2">Clients</h4>
-            <h2 class="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-dark">Yang Pernah Bekerjasama</h2>
-            <p class="font-medium text-md text-secondary md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolores autem et!</p>
+            <h4 class="font-semibold text-lg text-primary mb-2">Dosen Pengampu</h4>
+            <h2 class="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-dark">Bpk H. Dwi Haryono, M. Kom</h2>
+            <!-- FOTO -->
+            <div class="flex justify-center mb-6">
+              <a href="https://www.instagram.com/pak_haji_dwi?igsh=dXl1OGpoNTR5ZDdu" target="_blank">
+                <img 
+                  src="src/img/clients/dosen2.png" 
+                  alt="Foto Dosen"
+                  class="w-40 h-40 object-cover rounded-full border-4 border-white shadow-lg"
+                />
+              </a>
+            </div>
+            <p class="font-medium text-md text-secondary md:text-lg dark:text-dark">Dosen Universitas Sains dan Teknologi Indonesia</p>
           </div>
         </div>
-        <div class="w-full px-4">
+        <!-- <div class="w-full px-4">
           <div class="flex flex-wrap items-center justify-center">
             <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
               <img src="src/img/clients/google.svg.png" alt="Google" />
@@ -221,7 +344,7 @@
               <img src="src/img/clients/tokopedia.svg.png" alt="Google" />
             </a>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
     <!-- Client Section end -->
@@ -233,46 +356,59 @@
           <div class="max-w-xl mx-auto text-center mb-16">
             <h4 class="font-semibold text-lg text-primary mb-2">Blog</h4>
             <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white">Tulisan Terkini</h2>
-            <p class="font-medium text-md text-secondary md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ullam sed esse nobis.</p>
+            <!-- <p class="font-medium text-md text-secondary md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ullam sed esse nobis.</p> -->
           </div>
         </div>
 
         <div class="flex flex-wrap">
           <div class="w-full px-4 lg:w-1/2 xl:1/3">
             <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
-              <img src="https://source.unsplash.com/360x200?programming" alt="programming" class="w-full" />
+              <img src="src/img/techno.png" alt="technopreneur" class="w-full" />
               <div class="py-8 px-6">
                 <h3>
-                  <a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">Tips Belajar Programming</a>
+                  <a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">Technopreneur: Membuka Peluang Bisnis di Dunia Digital</a>
                 </h3>
-                <p class="text-base font-medium text-secondary mb-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, laudantium.</p>
-                <a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Baca Selengkapnya</a>
+                <!-- <p class="text-base font-medium text-secondary mb-6"></p> -->
+                <a href="https://bungashakila-2417052802048-usti.blogspot.com/p/technopreneur.html" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80" target="_blank">Baca Selengkapnya</a>
               </div>
             </div>
           </div>
 
           <div class="w-full px-4 lg:w-1/2 xl:1/3">
             <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
-              <img src="https://source.unsplash.com/360x200?mechanical+keyboard" alt="programming" class="w-full" />
+              <img src="src/img/rm1.jpeg" alt="wawancara" class="w-full" />
               <div class="py-8 px-6">
                 <h3>
-                  <a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">Review Keyboard Gamen Titan V</a>
+                  <a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">Review Wawancara di Rumah Makan Anak Amak</a>
                 </h3>
-                <p class="text-base font-medium text-secondary mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consequatur qui voluptas.</p>
-                <a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Baca Selengkapnya</a>
+                <!-- <p class="text-base font-medium text-secondary mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consequatur qui voluptas.</p> -->
+                <a href="https://bungashakila-2417052802048-usti.blogspot.com/p/wawancara.html" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80" target="_blank">Baca Selengkapnya</a>
               </div>
             </div>
           </div>
 
           <div class="w-full px-4 lg:w-1/2 xl:1/3">
             <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
-              <img src="https://source.unsplash.com/360x200?coffee" alt="programming" class="w-full" />
+              <img src="src/img/2.jpeg" alt="sejarah" class="w-full" />
               <div class="py-8 px-6">
                 <h3>
-                  <a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">Menikmati Secangkir Kopi</a>
+                  <a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">Sejarah Universitas Sains dan Teknologi Indonesia</a>
                 </h3>
-                <p class="text-base font-medium text-secondary mb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore ullam minus magnam cumque sapiente. Ex, debitis.</p>
-                <a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Baca Selengkapnya</a>
+                <!-- <p class="text-base font-medium text-secondary mb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore ullam minus magnam cumque sapiente. Ex, debitis.</p> -->
+                <a href="https://bungashakila-2417052802048-usti.blogspot.com/p/universitas-sains-dan-teknologi.html" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80" target="_blank">Baca Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full px-4 lg:w-1/2 xl:1/3">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
+              <img src="src/img/cv.png" alt="sejarah" class="w-full" />
+              <div class="py-8 px-6">
+                <h3>
+                  <a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">Curriculum Vitae</a>
+                </h3>
+                <!-- <p class="text-base font-medium text-secondary mb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore ullam minus magnam cumque sapiente. Ex, debitis.</p> -->
+                <a href="https://bungashakila-2417052802048-usti.blogspot.com/p/cv.html" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80" target="_blank">Baca Selengkapnya</a>
               </div>
             </div>
           </div>
@@ -288,7 +424,7 @@
           <div class="max-w-xl mx-auto text-center mb-16">
             <h4 class="font-semibold text-lg text-primary mb-2">Contact</h4>
             <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white">Hubungi Saya</h2>
-            <p class="font-medium text-md text-secondary md:text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, quas?</p>
+            <!-- <p class="font-medium text-md text-secondary md:text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, quas?</p> -->
           </div>
         </div>
 
@@ -320,11 +456,12 @@
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
-            <h2 class="font-bold text-4xl text-white mb-5">BAPPEDA</h2>
+            <h2 class="font-bold text-4xl text-white mb-5">Universitas Sains dan Teknologi Indonesia</h2>
             <h3 class="font-bold text-2xl mb-2">Hubungi Kami</h3>
-            <p>@bunga</p>
-            <p>Jl. Delima, Tebing Tinggi</p>
-            <p>Sumatera Utara</p>
+            <p>Website kampus
+              <a href="https://usti.ac.id" target="_blank" class="text-blue-500 hover:underline">usti.ac.id</a>
+            </p>
+            <p>Jl. Purwodadi Indah No.KM. 10, Sidomulyo Bar., Kec. Tampan, Kota Pekanbaru, Riau 28294</p>
           </div>
           <div class="w-full px-4 mb-12 md:w-1/3">
             <h3 class="font-semibold text-xl text-white mb-5">Kategori Tulisan</h3>
@@ -341,29 +478,16 @@
             </ul>
           </div>
           <div class="w-full px-4 mb-12 md:w-1/3">
-            <h3 class="font-semibold text-xl text-white mb-5">Tautan</h3>
-            <ul class="text-slate-300">
-              <li>
-                <a href="#home" class="inline-block text-base hover:text-primary mb-3">Beranda</a>
-              </li>
-              <li>
-                <a href="#about" class="inline-block text-base hover:text-primary mb-3">Tentang Kami</a>
-              </li>
-              <li>
-                <a href="#portfolio" class="inline-block text-base hover:text-primary mb-3">Portfolio</a>
-              </li>
-              <li>
-                <a href="#clients" class="inline-block text-base hover:text-primary mb-3">Clients</a>
-              </li>
-              <li>
-                <a href="#blog" class="inline-block text-base hover:text-primary mb-3">Blog</a>
-              </li>
-              <li>
-                <a href="#contact" class="inline-block text-base hover:text-primary mb-3">Contact</a>
-              </li>
-            </ul>
+            <h3 class="font-semibold text-xl text-white mb-5">Lokasi Kampus</h3>
+            <div class="w-full h-40 rounded-lg overflow-hidden shadow-lg">
+              <iframe 
+                src="https://www.google.com/maps?q=Universitas%20Sains%20dan%20Teknologi%20Indonesia&output=embed"
+                class="w-full h-full border-0"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
           </div>
-        </div>
 
         <div class="w-full pt-10 border-t border-slate-700">
           <div class="flex items-center justify-center mb-5">
@@ -394,6 +518,24 @@
                 />
               </svg>
             </a>
+
+            <!-- YouTube -->
+               <a href="https://www.youtube.com/@bungashakila1788" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-secondary hover:border-primary hover:bg-primary hover:text-white">
+                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <title>YouTube</title>
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  />
+                </svg>
+              </a>
+
+              <!-- Apple Music -->
+              <a href="https://music.apple.com/id/playlist/meee/pl.u-11zBJ7afNq2z9Mz?l=id" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-secondary hover:border-primary hover:bg-primary hover:text-white">
+                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <title>Apple Music</title>
+                  <path d="M23.994 6.124a9.23 9.23 0 00-.24-2.19c-.317-1.31-1.062-2.31-2.18-3.043a5.022 5.022 0 00-1.877-.726 10.496 10.496 0 00-1.564-.15c-.04-.003-.083-.01-.124-.013H5.986c-.152.01-.303.017-.455.026-.747.043-1.49.123-2.193.4-1.336.53-2.3 1.452-2.865 2.78-.192.448-.292.925-.363 1.408-.056.392-.088.785-.1 1.18 0 .032-.007.062-.01.093v12.223c.01.14.017.283.027.424.05.815.154 1.624.497 2.373.65 1.42 1.738 2.353 3.234 2.801.42.127.856.187 1.293.228.555.053 1.11.06 1.667.06h11.03a12.5 12.5 0 001.57-.1c.822-.106 1.596-.35 2.295-.81a5.046 5.046 0 001.88-2.207c.186-.42.293-.87.37-1.324.113-.675.138-1.358.137-2.04-.002-3.8 0-7.595-.003-11.393zm-6.423 3.99v5.712c0 .417-.058.827-.244 1.206-.29.59-.76.962-1.388 1.14-.35.1-.706.157-1.07.173-.95.045-1.773-.6-1.943-1.536a1.88 1.88 0 011.038-2.022c.323-.16.67-.25 1.018-.324.378-.082.758-.153 1.134-.24.274-.063.457-.23.51-.516a.904.904 0 00.02-.193c0-1.815 0-3.63-.002-5.443a.725.725 0 00-.026-.185c-.04-.15-.15-.243-.304-.234-.16.01-.318.035-.475.066-.76.15-1.52.303-2.28.456l-2.325.47-1.374.278c-.016.003-.032.01-.048.013-.277.077-.377.203-.39.49-.002.042 0 .086 0 .13-.002 2.602 0 5.204-.003 7.805 0 .42-.047.836-.215 1.227-.278.64-.77 1.04-1.434 1.233-.35.1-.71.16-1.075.172-.96.036-1.755-.6-1.92-1.544-.14-.812.23-1.685 1.154-2.075.357-.15.73-.232 1.108-.31.287-.06.575-.116.86-.177.383-.083.583-.323.6-.714v-.15c0-2.96 0-5.922.002-8.882 0-.123.013-.25.042-.37.07-.285.273-.448.546-.518.255-.066.515-.112.774-.165.733-.15 1.466-.296 2.2-.444l2.27-.46c.67-.134 1.34-.27 2.01-.403.22-.043.442-.088.663-.106.31-.025.523.17.554.482.008.073.012.148.012.223.002 1.91.002 3.822 0 5.732z"/>
+                </svg>
+              </a>
           </div>
           <p class="font-medium text-xs text-slate-500 text-center">
             Dibuat dengan <span class="text-pink-500">❤</span> oleh <a href="https://instagram.com/bungakssx/" target="_blank" class="font-bold text-primary">Bunga S A Gari</a>, menggunakan
