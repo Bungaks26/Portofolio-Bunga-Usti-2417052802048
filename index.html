@@ -12,6 +12,16 @@
         document.documentElement.classList.remove("dark");
       }
     </script>
+    <style>
+      .custom-link {
+        color: #3b82f6; /* Warna biru (text-blue-500) */
+        transition: color 0.3s ease;
+      }
+      .custom-link:hover {
+        text-decoration: underline;
+        color: #1d4ed8; /* Warna biru yang lebih gelap saat di-hover (text-blue-700) */
+      }
+    </style>
   </head>
   <body>
     <!-- Header section start -->
@@ -19,7 +29,7 @@
       <div class="container">
         <div class="flex items-center justify-between relative">
           <div class="px-4">
-            <a href="#home" class="font-bold text-lg text-primary block py-6">Bunga S A Gari</a>
+            <a href="#home" class="font-bold text-lg text-primary block py-6 transition duration-300 hover:scale-110">Bunga S A Gari</a>
           </div>
           <div class="flex items-center px-4">
             <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
@@ -34,22 +44,25 @@
             >
               <ul class="block lg:flex">
                 <li class="group">
-                  <a href="#home" class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white">Beranda</a>
+                  <a href="#home" class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white transition duration-300 hover:scale-110">Beranda</a>
                 </li>
                 <li class="group">
-                  <a href="#about" class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white">Tentang Saya</a>
+                  <a href="#about" class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white transition duration-300 hover:scale-110">Tentang Saya</a>
                 </li>
                 <li class="group">
-                  <a href="#portfolio" class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white">Portofolio</a>
+                  <a href="#portfolio" class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white transition duration-300 hover:scale-110">Portofolio</a>
                 </li>
                 <li class="group">
-                  <a href="#clients" class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white">Dosen Pengampu</a>
+                  <a href="#clients" class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white transition duration-300 hover:scale-110">Dosen Pengampu</a>
                 </li>
                 <li class="group">
-                  <a href="#blog" class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white">Blog</a>
+                  <a href="#blog" class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white transition duration-300 hover:scale-110">Blog</a>
                 </li>
                 <li class="group">
-                  <a href="#contact" class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white">Contact</a>
+                  <a href="#affiliate" class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white transition duration-300 hover:scale-110">Affiliate</a>
+                </li>
+                <li class="group">
+                  <a href="#contact" class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white transition duration-300 hover:scale-110">Contact</a>
                 </li>
                 <li class="flex items-center pl-8 mt-3 lg:mt-0">
                   <div class="flex">
@@ -80,7 +93,7 @@
             <h2 class="font-medium text-secondary text-lg mb-5 lg:text-2xl">Student & <span class="text-dark dark:text-white">Web Programmer</span></h2>
             <p class="font-medium text-secondary mb-10 leading-relaxed">Belajar web programming itu mudah dan menyenangkan bukan? <span class="text-dark font-bold dark:text-white">BUKAN!</span></p>
 
-            <a href="#contact" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Hubungi Saya</a>
+            <a href="#contact" class="inline-block text-base font-semibold text-white bg-primary py-3 px-8 rounded-full transition duration-300 ease-in-out hover:shadow-lg hover:opacity-80 hover:scale-105">Hubungi Saya</a>        
           </div>
           <div class="w-full self-end px-4 lg:w-1/2">
             <div class="relative mt-10 lg:mt-9 h-[400px] flex items-center justify-center">
@@ -126,7 +139,7 @@
                   <img 
                     src="src/img/logo_usti.png" 
                     alt="Foto Kampus USTI"
-                    class="w-32 object-contain"
+                    class="w-50 object-contain"
                   />
                 </a>
               </div>
@@ -160,48 +173,59 @@
             Fokus saya adalah membangun website yang responsif, modern, dan mudah digunakan.
           </p>
           <!-- SKILLS -->
-        <div class="mb-6">
-          <h3 class="font-semibold text-dark mb-3 dark:text-white">
-            Skills
-          </h3>
+          <div class="mb-6">
+            <h3 class="font-semibold text-dark mb-4 dark:text-white">Skills</h3>
 
-          <div class="flex flex-wrap gap-3">
-            <span class="px-4 py-1 rounded-full text-sm font-medium 
-              bg-primary text-white 
-              hover:opacity-80 hover:scale-105 
-              transition duration-300 mr-2">
-              HTML
-            </span>
+            <div class="mb-4">
+              <div class="flex justify-between mb-1">
+                <span class="text-base font-medium text-dark dark:text-white">HTML</span>
+                <span class="text-sm font-medium text-primary">98%</span>
+              </div>
+              <div class="w-full bg-slate-200 rounded-full h-4 dark:bg-slate-700">
+                <div class="bg-primary h-4 rounded-full" style="width: 98%"></div>
+              </div>
+            </div>
 
-            <span class="px-4 py-1 rounded-full text-sm font-medium 
-              bg-primary text-white 
-              hover:opacity-80 hover:scale-105 
-              transition duration-300 mr-2">
-              CSS
-            </span>
+            <div class="mb-4">
+              <div class="flex justify-between mb-1">
+                <span class="text-base font-medium text-dark dark:text-white">CSS</span>
+                <span class="text-sm font-medium text-primary">98%</span>
+              </div>
+              <div class="w-full bg-slate-200 rounded-full h-4 dark:bg-slate-700">
+                <div class="bg-primary h-4 rounded-full" style="width: 98%"></div>
+              </div>
+            </div>
 
-            <span class="px-4 py-1 rounded-full text-sm font-medium 
-              bg-primary text-white 
-              hover:opacity-80 hover:scale-105 
-              transition duration-300 mr-2">
-              Tailwind
-            </span>
+            <div class="mb-4">
+              <div class="flex justify-between mb-1">
+                <span class="text-base font-medium text-dark dark:text-white">Tailwind CSS</span>
+                <span class="text-sm font-medium text-primary">90%</span>
+              </div>
+              <div class="w-full bg-slate-200 rounded-full h-4 dark:bg-slate-700">
+                <div class="bg-primary h-4 rounded-full" style="width: 90%"></div>
+              </div>
+            </div>
 
-            <span class="px-4 py-1 rounded-full text-sm font-medium 
-              bg-primary text-white 
-              hover:opacity-80 hover:scale-105 
-              transition duration-300 mr-2">
-              JavaScript
-            </span>
+            <div class="mb-4">
+              <div class="flex justify-between mb-1">
+                <span class="text-base font-medium text-dark dark:text-white">JavaScript</span>
+                <span class="text-sm font-medium text-primary">85%</span>
+              </div>
+              <div class="w-full bg-slate-200 rounded-full h-4 dark:bg-slate-700">
+                <div class="bg-primary h-4 rounded-full" style="width: 85%"></div>
+              </div>
+            </div>
 
-            <span class="px-4 py-1 rounded-full text-sm font-medium 
-              bg-primary text-white 
-              hover:opacity-80 hover:scale-105 
-              transition duration-300">
-              Python
-            </span>
+            <div class="mb-4">
+              <div class="flex justify-between mb-1">
+                <span class="text-base font-medium text-dark dark:text-white">Python</span>
+                <span class="text-sm font-medium text-primary">85%</span>
+              </div>
+              <div class="w-full bg-slate-200 rounded-full h-4 dark:bg-slate-700">
+                <div class="bg-primary h-4 rounded-full" style="width: 85%"></div>
+              </div>
+            </div>
           </div>
-        </div>
 
           <div class="w-full px-4 lg:w-1/2">
             <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10 dark:text-white">Mari Berteman</h3>
@@ -209,7 +233,7 @@
 
             <div class="flex items-center">
               <!-- Instagram -->
-              <a href="https://www.instagram.com/bushazhelgar/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-secondary hover:border-primary hover:bg-primary hover:text-white">
+              <a href="https://www.instagram.com/bushazhelgar/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-secondary hover:border-primary hover:bg-primary hover:text-white transition duration-300 ease-in-out hover:scale-110">
                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>Instagram</title>
                   <path
@@ -219,7 +243,7 @@
               </a>
 
               <!-- Twitter/X -->
-              <a href="https://twitter.com/bungashakila271" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-secondary hover:border-primary hover:bg-primary hover:text-white">
+              <a href="https://twitter.com/bungashakila271" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-secondary hover:border-primary hover:bg-primary hover:text-white transition duration-300 ease-in-out hover:scale-110">
                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>X</title>
                   <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
@@ -227,7 +251,7 @@
               </a>
 
               <!-- GitHub -->
-              <a href="https://github.com/Bungaks26" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-secondary hover:border-primary hover:bg-primary hover:text-white">
+              <a href="https://github.com/Bungaks26" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-secondary hover:border-primary hover:bg-primary hover:text-white transition duration-300 ease-in-out hover:scale-110">
                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>GitHub</title>
                   <path
@@ -237,17 +261,17 @@
               </a>
               
               <!-- YouTube -->
-               <a href="https://www.youtube.com/@bungashakila1788" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-secondary hover:border-primary hover:bg-primary hover:text-white">
-                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <title>YouTube</title>
-                  <path
-                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
-                  />
-                </svg>
-              </a>
+               <a href="https://www.youtube.com/@bungashakila1788" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-secondary hover:border-primary hover:bg-primary hover:text-white transition duration-300 ease-in-out hover:scale-110">
+                  <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <title>YouTube</title>
+                    <path
+                      d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                    />
+                  </svg>
+                </a>
 
               <!-- Apple Music -->
-              <a href="https://music.apple.com/id/playlist/meee/pl.u-11zBJ7afNq2z9Mz?l=id" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-secondary hover:border-primary hover:bg-primary hover:text-white">
+              <a href="https://music.apple.com/id/playlist/meee/pl.u-11zBJ7afNq2z9Mz?l=id" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-secondary hover:border-primary hover:bg-primary hover:text-white transition duration-300 ease-in-out hover:scale-110">
                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>Apple Music</title>
                   <path d="M23.994 6.124a9.23 9.23 0 00-.24-2.19c-.317-1.31-1.062-2.31-2.18-3.043a5.022 5.022 0 00-1.877-.726 10.496 10.496 0 00-1.564-.15c-.04-.003-.083-.01-.124-.013H5.986c-.152.01-.303.017-.455.026-.747.043-1.49.123-2.193.4-1.336.53-2.3 1.452-2.865 2.78-.192.448-.292.925-.363 1.408-.056.392-.088.785-.1 1.18 0 .032-.007.062-.01.093v12.223c.01.14.017.283.027.424.05.815.154 1.624.497 2.373.65 1.42 1.738 2.353 3.234 2.801.42.127.856.187 1.293.228.555.053 1.11.06 1.667.06h11.03a12.5 12.5 0 001.57-.1c.822-.106 1.596-.35 2.295-.81a5.046 5.046 0 001.88-2.207c.186-.42.293-.87.37-1.324.113-.675.138-1.358.137-2.04-.002-3.8 0-7.595-.003-11.393zm-6.423 3.99v5.712c0 .417-.058.827-.244 1.206-.29.59-.76.962-1.388 1.14-.35.1-.706.157-1.07.173-.95.045-1.773-.6-1.943-1.536a1.88 1.88 0 011.038-2.022c.323-.16.67-.25 1.018-.324.378-.082.758-.153 1.134-.24.274-.063.457-.23.51-.516a.904.904 0 00.02-.193c0-1.815 0-3.63-.002-5.443a.725.725 0 00-.026-.185c-.04-.15-.15-.243-.304-.234-.16.01-.318.035-.475.066-.76.15-1.52.303-2.28.456l-2.325.47-1.374.278c-.016.003-.032.01-.048.013-.277.077-.377.203-.39.49-.002.042 0 .086 0 .13-.002 2.602 0 5.204-.003 7.805 0 .42-.047.836-.215 1.227-.278.64-.77 1.04-1.434 1.233-.35.1-.71.16-1.075.172-.96.036-1.755-.6-1.92-1.544-.14-.812.23-1.685 1.154-2.075.357-.15.73-.232 1.108-.31.287-.06.575-.116.86-.177.383-.083.583-.323.6-.714v-.15c0-2.96 0-5.922.002-8.882 0-.123.013-.25.042-.37.07-.285.273-.448.546-.518.255-.066.515-.112.774-.165.733-.15 1.466-.296 2.2-.444l2.27-.46c.67-.134 1.34-.27 2.01-.403.22-.043.442-.088.663-.106.31-.025.523.17.554.482.008.073.012.148.012.223.002 1.91.002 3.822 0 5.732z"/>
@@ -273,21 +297,21 @@
         <!-- Card -->
         <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
           <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
-              <a href="https://github.com/Bungaks26/portfolio-bappeda-tebing-tinggi" target="_blank">
-                <img src="src/img/portfolio/project1.png" alt="Project 1" />
+            <div class="rounded-md shadow-md overflow-hidden transition duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl">
+              <a href="https://sites.google.com/view/fadilmaulana-2417052802071-ust/produk" target="_blank">
+                <img src="src/img/produk.jpeg" alt="Project 1" />
               </a>
             </div>
-            <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Portofolio Bappeda Tebing Tinggi</h3>
-            <p class="font-medium text-base text-secondary">Project portofolio untuk Bappeda Tebing Tinggi yang di kembang mengggunakan HTML, Tailwind CSS, dan JavaScript</p>
+            <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Produk Kelompok</h3>
+            <p class="font-medium text-base text-secondary">Produk yang dikembangkan oleh kelompok kami, kepada masyarakat</p>
           </div>
-          <div class="mb-12 p-4 md:w-1/2">
+          <!-- <div class="mb-12 p-4 md:w-1/2">
             <div class="rounded-md shadow-md overflow-hidden">
               <img src="src/img/portfolio/project2.png" alt="Project Pembuatan kode penyelesaian Metode Numerik" width="w-full" />
             </div>
             <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Project Pembuatan kode penyelesaian Metode Numerik</h3>
             <p class="font-medium text-base text-secondary">Project ini di buat agar mempermudah perhitungan dalam menyelesaikan masalah metode numerik, dikembangkan menggunakan Python</p>
-          </div>
+          </div> -->
 
           <!-- <div class="mb-12 p-4 md:w-1/2">
             <div class="rounded-md shadow-md overflow-hidden">
@@ -327,7 +351,7 @@
             <p class="font-medium text-md text-secondary md:text-lg dark:text-dark">Dosen Universitas Sains dan Teknologi Indonesia</p>
             <div class="flex items-center justify-center mb-5">
               <!-- Instagram -->
-              <a href="https://www.instagram.com/pak_haji_dwi?igsh=dXl1OGpoNTR5ZDdu" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-secondary hover:border-primary hover:bg-primary hover:text-white">
+              <a href="https://www.instagram.com/pak_haji_dwi?igsh=dXl1OGpoNTR5ZDdu" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-secondary hover:border-primary hover:bg-primary hover:text-white transition duration-300 ease-in-out hover:scale-110">
                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>Instagram</title>
                   <path
@@ -337,7 +361,7 @@
               </a>
 
               <!-- YouTube -->
-                <a href="https://www.youtube.com/c/DBINEntertainment" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-secondary hover:border-primary hover:bg-primary hover:text-white">
+                <a href="https://www.youtube.com/c/DBINEntertainment" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-secondary hover:border-primary hover:bg-primary hover:text-white transition duration-300 ease-in-out hover:scale-110">
                   <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <title>YouTube</title>
                     <path
@@ -347,7 +371,7 @@
                 </a>
 
                 <!-- Facebook -->
-                <a href="https://www.facebook.com/dwiharyono.skom/" target="_blank" class="w-9 h-9 mr-3 mt-2 mb-2 rounded-full flex justify-center items-center border border-slate-300 text-secondary hover:border-primary hover:bg-primary hover:text-white">
+                <a href="https://www.facebook.com/dwiharyono.skom/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-secondary hover:border-primary hover:bg-primary hover:text-white transition duration-300 ease-in-out hover:scale-110">
                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>Facebook</title>
                   <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
@@ -395,7 +419,7 @@
                   <a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">Technopreneur: Membuka Peluang Bisnis di Dunia Digital</a>
                 </h3>
                 <!-- <p class="text-base font-medium text-secondary mb-6"></p> -->
-                <a href="https://bungashakila-2417052802048-usti.blogspot.com/p/technopreneur.html" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80" target="_blank">Baca Selengkapnya</a>
+                <a href="https://bungashakila-2417052802048-usti.blogspot.com/p/technopreneur.html" class="inline-block font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg transition duration-300 ease-in-out hover:opacity-80 hover:scale-105" target="_blank">Baca Selengkapnya</a>
               </div>
             </div>
           </div>
@@ -408,7 +432,7 @@
                   <a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">Review Wawancara di Rumah Makan Anak Amak</a>
                 </h3>
                 <!-- <p class="text-base font-medium text-secondary mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consequatur qui voluptas.</p> -->
-                <a href="https://bungashakila-2417052802048-usti.blogspot.com/p/wawancara.html" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80" target="_blank">Baca Selengkapnya</a>
+                <a href="https://bungashakila-2417052802048-usti.blogspot.com/p/wawancara.html" class="inline-block font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg transition duration-300 ease-in-out hover:opacity-80 hover:scale-105" target="_blank">Baca Selengkapnya</a>
               </div>
             </div>
           </div>
@@ -421,7 +445,7 @@
                   <a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">Sejarah Universitas Sains dan Teknologi Indonesia</a>
                 </h3>
                 <!-- <p class="text-base font-medium text-secondary mb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore ullam minus magnam cumque sapiente. Ex, debitis.</p> -->
-                <a href="https://bungashakila-2417052802048-usti.blogspot.com/p/universitas-sains-dan-teknologi.html" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80" target="_blank">Baca Selengkapnya</a>
+                <a href="https://bungashakila-2417052802048-usti.blogspot.com/p/universitas-sains-dan-teknologi.html" class="inline-block font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg transition duration-300 ease-in-out hover:opacity-80 hover:scale-105" target="_blank">Baca Selengkapnya</a>
               </div>
             </div>
           </div>
@@ -434,7 +458,7 @@
                   <a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">Curriculum Vitae</a>
                 </h3>
                 <!-- <p class="text-base font-medium text-secondary mb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore ullam minus magnam cumque sapiente. Ex, debitis.</p> -->
-                <a href="https://bungashakila-2417052802048-usti.blogspot.com/p/cv.html" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80" target="_blank">Baca Selengkapnya</a>
+                <a href="https://bungashakila-2417052802048-usti.blogspot.com/p/cv.html" class="inline-block font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg transition duration-300 ease-in-out hover:opacity-80 hover:scale-105" target="_blank">Baca Selengkapnya</a>
               </div>
             </div>
           </div>
@@ -442,6 +466,34 @@
       </div>
     </section>
     <!-- Blog section End -->
+
+    <!-- Affilate section start -->
+     <section id="affiliate" class="pt-36 pb-32 bg-white dark:bg-slate-800">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-16">
+            <h4 class="font-semibold text-lg text-primary mb-2">Affiliate</h4>
+            <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white">Ayo Segera Bergabung di kampus ini!</h2>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap justify-center">
+          <div class="w-full px-4 lg:w-1/3 md:w-1/2">
+            <div class="bg-slate-100 rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-700">
+              <img src="src/img/pmb-usti.jpg" alt="Kampus" class="w-full" />
+              <div class="py-8 px-6">
+                <h3 class="mb-3 font-semibold text-xl text-dark truncate dark:text-white">Universitas Sains dan Teknologi Indonesia</h3>
+                <p class="text-base font-medium text-secondary mb-6">Ayo bergabung dan jadilah bagian dari kampus ini!</p>
+                <a href="https://usti.ac.id/bungashakilaazhelagari.aff" class="inline-block font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg transition duration-300 ease-in-out hover:opacity-80 hover:scale-105" target="_blank">Join Sekarang</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- Affiliate section end -->
+
 
     <!-- Contact section start -->
     <section id="contact" class="pt-36 pb-32 dark:bg-slate-800">
@@ -487,8 +539,7 @@
               </textarea>
             </div>
             <div class="w-full px-4">
-              <button type="submit" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">Kirim
-            </button>            
+              <button type="submit" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-300 ease-in-out hover:scale-[1.02]">Kirim</button>           
             </div>
           </div>
         </form>
@@ -504,11 +555,11 @@
             <h2 class="font-bold text-4xl text-white mb-5">Universitas Sains dan Teknologi Indonesia</h2>
             <h3 class="font-bold text-2xl mb-2">Hubungi Kami</h3>
             <p>Website kampus
-              <a href="https://usti.ac.id" target="_blank" class="text-blue-500 hover:underline">usti.ac.id</a>
+              <a href="https://usti.ac.id" target="_blank" class="text-blue-500 custom-link">usti.ac.id</a>
             </p>
             <div class="flex items-center">
               <!-- Instagram -->
-              <a href="https://www.instagram.com/ustiofficial?igsh=MWJ1bXV6cTh6bGhxMg==" target="_blank" class="w-9 h-9 mr-3 mt-2 mb-2 rounded-full flex justify-center items-center border border-slate-300 text-secondary hover:border-primary hover:bg-primary hover:text-white">
+              <a href="https://www.instagram.com/ustiofficial?igsh=MWJ1bXV6cTh6bGhxMg==" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-secondary hover:border-primary hover:bg-primary hover:text-white transition duration-300 ease-in-out hover:scale-110">
                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>Instagram</title>
                   <path
@@ -516,28 +567,44 @@
                   />
                 </svg>
               </a>
-              <a href="https://web.facebook.com/ustiofficial/?ref=NONE_xav_ig_profile_page_web" target="_blank" class="w-9 h-9 mr-3 mt-2 mb-2 rounded-full flex justify-center items-center border border-slate-300 text-secondary hover:border-primary hover:bg-primary hover:text-white">
+              <!-- Facebook -->
+              <a href="https://web.facebook.com/ustiofficial/?ref=NONE_xav_ig_profile_page_web" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-secondary hover:border-primary hover:bg-primary hover:text-white transition duration-300 ease-in-out hover:scale-110">
                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>Facebook</title>
                   <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
               </a>
+
+              <!-- Youtube -->
+               <a href="https://www.youtube.com/@ustiofficial" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-secondary hover:border-primary hover:bg-primary hover:text-white transition duration-300 ease-in-out hover:scale-110">
+                  <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <title>YouTube</title>
+                    <path
+                      d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                    />
+                  </svg>
+                </a>
+
+              <!-- Tiktok -->
+               <a href="https://www.tiktok.com/@ustiofficial" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-secondary hover:border-primary hover:bg-primary hover:text-white transition duration-300 ease-in-out hover:scale-110">
+                  <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <title>TikTok</title>
+                    <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+                  </svg>
+                </a>
             </div>
-            <p>Daftarkan Diri kamu di kampus ini!!
-              <a href="https://usti.ac.id/bungashakilaazhelagari.aff" target="_blank" class="text-blue-500 hover:underline">pmb.usti.ac.id</a>
-            </p><br>
             <p>Jl. Purwodadi Indah No.KM. 10, Sidomulyo Bar., Kec. Tampan, Kota Pekanbaru, Riau 28294</p>
           </div>
           <div class="w-full px-4 mb-12 md:w-1/3">
             <h3 class="font-semibold text-xl text-white mb-5">Kategori Tulisan</h3>
             <ul class="text-slate-300">
               <li>
-                <a href="#" class="inline-block text-base hover:text-primary mb-3">Programming</a>
+                <a class="inline-block text-base hover:text-primary mb-3">Programming</a>
               </li>
               <li>
-                <a href="#" class="inline-block text-base hover:text-primary mb-3">Teknologi</a>
+                <a class="inline-block text-base hover:text-primary mb-3">Teknologi</a>
               </li>
               <li>
-                <a href="#" class="inline-block text-base hover:text-primary mb-3">Gaya Hidup</a>
+                <a class="inline-block text-base hover:text-primary mb-3">Gaya Hidup</a>
               </li>
             </ul>
           </div>
@@ -556,7 +623,7 @@
         <div class="w-full pt-10 border-t border-slate-700">
           <div class="flex items-center justify-center mb-5">
             <!-- Instagram -->
-            <a href="https://www.instagram.com/bushazhelgar/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-secondary hover:border-primary hover:bg-primary hover:text-white">
+            <a href="https://www.instagram.com/bushazhelgar/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-secondary hover:border-primary hover:bg-primary hover:text-white transition duration-300 ease-in-out hover:scale-110">
               <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <title>Instagram</title>
                 <path
@@ -566,7 +633,7 @@
             </a>
 
             <!-- Twitter/X -->
-            <a href="https://twitter.com/bungashakila271" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-secondary hover:border-primary hover:bg-primary hover:text-white">
+            <a href="https://twitter.com/bungashakila271" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-secondary hover:border-primary hover:bg-primary hover:text-white transition duration-300 ease-in-out hover:scale-110">
               <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <title>X</title>
                 <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
@@ -574,7 +641,7 @@
             </a>
 
             <!-- GitHub -->
-            <a href="https://github.com/Bungaks26" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-secondary hover:border-primary hover:bg-primary hover:text-white">
+            <a href="https://github.com/Bungaks26" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-secondary hover:border-primary hover:bg-primary hover:text-white transition duration-300 ease-in-out hover:scale-110">
               <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <title>GitHub</title>
                 <path
@@ -584,7 +651,7 @@
             </a>
 
             <!-- YouTube -->
-               <a href="https://www.youtube.com/@bungashakila1788" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-secondary hover:border-primary hover:bg-primary hover:text-white">
+               <a href="https://www.youtube.com/@bungashakila1788" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-secondary hover:border-primary hover:bg-primary hover:text-white transition duration-300 ease-in-out hover:scale-110">
                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>YouTube</title>
                   <path
@@ -594,7 +661,7 @@
               </a>
 
               <!-- Apple Music -->
-              <a href="https://music.apple.com/id/playlist/meee/pl.u-11zBJ7afNq2z9Mz?l=id" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-secondary hover:border-primary hover:bg-primary hover:text-white">
+              <a href="https://music.apple.com/id/playlist/meee/pl.u-11zBJ7afNq2z9Mz?l=id" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-secondary hover:border-primary hover:bg-primary hover:text-white transition duration-300 ease-in-out hover:scale-110">
                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>Apple Music</title>
                   <path d="M23.994 6.124a9.23 9.23 0 00-.24-2.19c-.317-1.31-1.062-2.31-2.18-3.043a5.022 5.022 0 00-1.877-.726 10.496 10.496 0 00-1.564-.15c-.04-.003-.083-.01-.124-.013H5.986c-.152.01-.303.017-.455.026-.747.043-1.49.123-2.193.4-1.336.53-2.3 1.452-2.865 2.78-.192.448-.292.925-.363 1.408-.056.392-.088.785-.1 1.18 0 .032-.007.062-.01.093v12.223c.01.14.017.283.027.424.05.815.154 1.624.497 2.373.65 1.42 1.738 2.353 3.234 2.801.42.127.856.187 1.293.228.555.053 1.11.06 1.667.06h11.03a12.5 12.5 0 001.57-.1c.822-.106 1.596-.35 2.295-.81a5.046 5.046 0 001.88-2.207c.186-.42.293-.87.37-1.324.113-.675.138-1.358.137-2.04-.002-3.8 0-7.595-.003-11.393zm-6.423 3.99v5.712c0 .417-.058.827-.244 1.206-.29.59-.76.962-1.388 1.14-.35.1-.706.157-1.07.173-.95.045-1.773-.6-1.943-1.536a1.88 1.88 0 011.038-2.022c.323-.16.67-.25 1.018-.324.378-.082.758-.153 1.134-.24.274-.063.457-.23.51-.516a.904.904 0 00.02-.193c0-1.815 0-3.63-.002-5.443a.725.725 0 00-.026-.185c-.04-.15-.15-.243-.304-.234-.16.01-.318.035-.475.066-.76.15-1.52.303-2.28.456l-2.325.47-1.374.278c-.016.003-.032.01-.048.013-.277.077-.377.203-.39.49-.002.042 0 .086 0 .13-.002 2.602 0 5.204-.003 7.805 0 .42-.047.836-.215 1.227-.278.64-.77 1.04-1.434 1.233-.35.1-.71.16-1.075.172-.96.036-1.755-.6-1.92-1.544-.14-.812.23-1.685 1.154-2.075.357-.15.73-.232 1.108-.31.287-.06.575-.116.86-.177.383-.083.583-.323.6-.714v-.15c0-2.96 0-5.922.002-8.882 0-.123.013-.25.042-.37.07-.285.273-.448.546-.518.255-.066.515-.112.774-.165.733-.15 1.466-.296 2.2-.444l2.27-.46c.67-.134 1.34-.27 2.01-.403.22-.043.442-.088.663-.106.31-.025.523.17.554.482.008.073.012.148.012.223.002 1.91.002 3.822 0 5.732z"/>
@@ -602,7 +669,7 @@
               </a>
           </div>
           <p class="font-medium text-xs text-slate-500 text-center">
-            Dibuat dengan <span class="text-pink-500">❤</span> oleh <a href="https://instagram.com/bungakssx/" target="_blank" class="font-bold text-primary">Bunga S A Gari</a>, menggunakan
+            Dibuat dengan <span class="text-pink-500">❤</span> oleh <a href="https://www.instagram.com/bushazhelgar/" target="_blank" class="font-bold text-primary">Bunga S A Gari</a>, menggunakan
             <a href="https://tailwindcss.com" target="_blank" class="font-bold text-sky-500">Tailwind CSS</a>
           </p>
         </div>
